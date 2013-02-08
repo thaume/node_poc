@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Product Workgroup</title>
+
+  <link rel="stylesheet" href="/css/coreui.css">
+  <link rel="stylesheet" href="/css/coreui-global.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  {{#block "stylesheet"}}{{/block}}
+</head>
+<body class="main-tip-left hasJs">
+  <div id="viadeocontainer">
+    {{> includes/header}}
+    {{{body}}}
+    {{> includes/footer}}
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/site.js"></script>
+  {{#block "javascript"}}{{/block}}
+</body>
+</html>

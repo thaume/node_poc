@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+  .wrapper
+
+    include ../includes/header
+
+    .site-container
+      .content
+        
+        form#new-user-form.form(action='/api/users', method='post')
+          fieldset
+            legend Create a new user
+            p
+              label(for='user-first-name') First name
+              input#user-first-name(placeholder='Your first name', type='text', name='first-name')
+
+              label(for='user-last-name') Last name
+              input#user-last-name(placeholder='Your last name', type='text', name='last-name')
+
+              label(for='user-age') Age
+              input#user-age(placeholder='Your age', type='text', name='first-name')
+
+              input#new-user-form-submit.button(type="submit", name="submit", value="Send")   
+
+    include ../includes/footer

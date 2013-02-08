@@ -1,0 +1,141 @@
+/* =Reset CSS by Eric Meyer : v1.0 | 20080212
+-------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 			{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body 														{ line-height: 1; }
+ol, ul 														{ list-style: none; }
+blockquote, q 												{ quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after 		{ content: ''; content: none; }
+:focus														{ outline: 1px dotted inherit; }
+ins 														{ text-decoration: none; }
+del 														{ text-decoration: line-through; }
+table 														{ border-collapse: collapse; border-spacing: 0; }
+a, button													{ cursor: pointer; }
+
+
+/* =Grid
+-------------------------------------------------- */
+.line 														{ overflow: hidden; *overflow: visible; *zoom: 1; }
+.unit														{ float: left; }
+.unit-right 												{ float: right; }
+.spread1of1													{ float: none; }
+.spread1of2													{ width: 50%; }
+.spread1of3													{ width: 33.33333%; }
+.spread2of3													{ width: 66.66666%; }
+.spread1of4													{ width: 25%; }
+.spread3of4													{ width: 75%; }
+.spread1of5													{ width: 20%; }
+.spread2of5													{ width: 40%; }
+.spread3of5													{ width: 60%; }
+.spread4of5													{ width: 80%; }
+.spread1of6													{ width: 16.6666667%; }
+.spread2of6													{ width: 33.3333334%; }
+.spread3of6													{ width: 49.9999998%; }
+.spread4of6													{ width: 66.6666668%; }
+.spread5of6													{ width: 83.3333334%; }
+
+
+/* =Global HTML
+-------------------------------------------------- */
+html 														{ -webkit-text-size-adjust: 100%; }
+body 														{ background: white; font: 75%/1.5 Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif; }
+
+a 															{ text-decoration: none; }
+a:hover, a:focus											{ text-decoration: underline; }
+h1, h2, h3, h4, h5, h6										{ font-weight: normal; line-height: 1.2em; }
+h1															{ font-size: 200%; }
+h2 															{ font-size: 175%; }
+h3															{ font-size: 150%; }
+h4															{ font-size: 125%; }
+h5															{ font-size: 108%; }
+h6															{ font-size: 100%; }
+p 															{ margin-bottom: .8em; }
+blockquote 													{ padding-left: 1em; }
+hr 															{ margin: 10px 0; }
+
+ul, ol 														{ list-style: none outside none; }
+ul 															{ list-style-type: square; }
+ol 															{ list-style-type: decimal; }
+li 															{ margin-left: 20px; }
+
+h1, h2, h3, h4, h5, h6,
+ol, ul, p, dl, hr, pre, 
+table, address, fieldset									{ margin-bottom: 10px; }
+
+table														{ margin-bottom: 10px; width: 100%; }
+th, td 														{ padding: .2em 1em; text-align: left; }
+
+form														{  }
+form fieldset 												{ margin-bottom: 10px; }
+form legend													{ font-size: 1.1em; }
+form p label												{ width: 98%; }
+form p input, form p textarea,
+form p button 												{ font-size: 1em; line-height: 100%; font-family: inherit; -webkit-appearance: none; }
+form p input[type="text"],
+form p input[type="password"]								{ width: 98%; }
+form p select,
+form p textarea												{ margin: 0; width: 99%; }
+
+form .hform p label											{ float: left; margin-right: 3%; width: 32%; text-align: right; }
+form .hform p input											{ width: 60%; }
+form .hform p select										{ width: 61%; }
+form .hform button											{ margin-left: 35%; }
+
+form .search p label										{ position: absolute !important; width: 1px; height: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); overflow: hidden; }
+form .search p input										{ width: 66%; }
+form .search p button										{ margin-left: 2%; width: 28%; }
+
+
+/* =Snippet
+-------------------------------------------------- */
+body 														{ -webkit-font-smoothing: antialiased; -moz-opacity: 0.9999; }
+::selection 												{ background-color: #ccc; color: #111; }
+::-moz-selection 											{ background-color: #ccc; color: #111; }
+
+
+/* =Layout
+-------------------------------------------------- */
+.wrapper													{ margin: 0 auto; width: 960px; }
+.main														{ position: relative; *zoom: 1; }
+.main:before, .main:after 									{ content: ''; display: table; }
+.main:after 												{ clear: both; }
+.container													{ float: left; width: 75%; }
+.sidebar													{ float: right; width: 25%; }
+
+/* =Clearfix
+-------------------------------------------------- */
+.clearfix:before, .clearfix:after 							{ content: ''; display: table; }
+.clearfix:after 											{ clear: both; }
+
+/* =Boxes & Modules
+-------------------------------------------------- */
+.box 														{ position: relative; margin: 0 10px 20px; }
+.box:before, .box:after 									{ content: ''; display: table; }
+.box:after 													{ clear: both; }
+
+.breadcrumb 												{ margin-bottom: 20px; }
+.breadcrumb ul 												{ margin: 0; }
+.breadcrumb ul li											{ margin: 0; display: inline; }
+
+
+/* =Alignments & Mixins
+-------------------------------------------------- */
+.hide 														{ position: absolute; margin: 0; padding: 0; width: 1px; height: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); overflow: hidden; }
+.alignleft 													{ float: left; margin: 3px 10px 3px 0; }
+.alignright													{ float: right; margin: 3px 0 3px 10px; }
+.aligncenter												{ margin: 0 auto 10px; display: block; }
+.align-left 												{ text-align: left; }
+.align-right 												{ text-align: right; }
+.align-center 												{ text-align: center; }
+
+
+/* =Browser Hacks
+-------------------------------------------------- */
+#ie form button												{ padding: 0 7px; line-height: 1.3em; }

@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  .wrapper
+
+    include ../includes/header
+
+    .site-container
+      .content
+        ul.users
+          each result, i in results
+            li 
+              p
+                a(href='/api/users/show/'+result.id) #{result.name.first} #{result.name.last}, #{result.age} yo
+
+        p
+          a(href='/api/users/new') Add user
+
+    include ../includes/footer

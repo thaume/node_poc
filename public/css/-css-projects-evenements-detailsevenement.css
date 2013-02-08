@@ -1,0 +1,38 @@
+
+#eventDetail{width:62%;margin-bottom:10px;text-align:center;padding:14px 0 0; border:1px solid #CCC; overflow:hidden;}
+#eventSubscribe{float:right;width:35%;}
+#eventCard{background-image:url(/v_img/calendar/event-detail-bg02.png);background-repeat:no-repeat;background-position:center;width:280px; height:180px; margin:0 auto;}
+#eventCard .eventDate{padding:5px 5px 0; height:42px;}
+#eventCard .line1,
+#eventCard .line2{text-align:center; color:#004466; line-height:18px;}
+#eventCard .line1{font-weight:bold; font-size:14px; padding-top:5px;}
+#eventCard .eventName{margin:0 6px; width:268px;}
+#eventCard .eventName td{width:268px; height:126px; text-align:center; vertical-align:middle; overflow:hidden; padding:0 10px;}
+#eventCard .eventName td div{width:248px;text-align:center; overflow:hidden; font-size:18px;line-height:22px; color:#004466;}
+#eventDescription{font-size:12px;padding:20px 5%; color:#004466; line-height:24px; color:#444; line-height:1.3;text-align:left;}
+#eventMiscs{width:100%;}
+#eventMiscs td{border-top:1px solid #CCC; vertical-align:top; text-align:left; line-height:normal; padding:10px; line-height:18px;}
+#eventMiscs .fieldIcon{padding:10px 0; width:36px; text-align:right;}
+#eventMiscs .fieldName{font-weight:bold; white-space:nowrap;}
+#eventMiscs .fieldValue{padding-left:0;}
+#eventMiscs .timeZone{font-size:11px; color:#666;}
+#eventMiscs .additionalInfo{background-color:#eee; padding:3px; font-weight:bold;}
+#eventSubscribe td.input{white-space:normal; text-align:left;}
+#eventSubscribe td.input input{margin:0 7px 2px 5px}
+#eventSubscribe .yesChoice td.input,
+#eventSubscribe .maybeChoice td.input,
+#eventSubscribe .noChoice td.input{background-repeat:no-repeat; background-position:left center; height:27px; padding-left:28px; font-weight:bold;}
+#eventSubscribe .yesChoice td.input{background-image:url(/v_img/icons/yes.gif) ;}
+#eventSubscribe .maybeChoice td.input{background-image:url(/v_img/icons/maybe.gif);}
+#eventSubscribe .noChoice td.input{background-image:url(/v_img/icons/no.gif);}
+#eventSubscribe .participantDetails{color:#888888; margin-top:10px; text-align:left;}
+#eventSubscribe .participantDetails a{color:#666; font-weight:bold; white-space:nowrap;}
+#eventSubscribe .info{padding:10px;background-color:#FAF8CC; color:#666;border:1px solid #CCC; margin-bottom:10px;text-align:left;}
+
+.eventPartipantList .yesChoice,
+.eventPartipantList .maybeChoice,
+.eventPartipantList .noChoice{background-repeat:no-repeat; background-position:right top; padding-right:28px;}
+.eventPartipantList .yesChoice{background-image:url(/v_img/icons/yes.gif);}
+.eventPartipantList .maybeChoice{background-image:url(/v_img/icons/maybe.gif);}
+.eventPartipantList .noChoice{background-image:url(/v_img/icons/no.gif);}
+

@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  .wrapper
+
+    include ../includes/header
+
+    .site-container
+      .content
+        p.
+          Name : #{result.name.first} #{result.name.last},
+        p.
+          Age : #{result.age}
+        p
+          a(href="/api/users/") Back
+          a#user-delete(href="/api/users/"+result._id) Delete
+
+    include ../includes/footer

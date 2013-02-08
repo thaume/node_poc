@@ -1,0 +1,11 @@
+#profileBar{box-shadow:0 0 2px rgba(0,0,0,.1);border:1px solid #dde9f1;color:#FFF;background-color:#dde9f1;filter:none;overflow:hidden;zoom:1;min-height:29px;padding:15px;position:relative;margin-top:0;width:949px;z-index:24;
+background:-webkit-gradient(linear,0% 0%,0% 100%,from(#dde9f1),to(#c7d9e7));
+background:-webkit-linear-gradient(top,#dde9f1,#c7d9e7);
+background:-moz-linear-gradient(top,#dde9f1,#c7d9e7);
+background:-ms-linear-gradient(top,#dde9f1,#c7d9e7);
+background:-o-linear-gradient(top,#dde9f1,#c7d9e7);}
+#profileBar .tagline{color:black;}
+#profileBar h2{margin-bottom:2px !important; font-size:19px;}
+#profileBar .tagline span{font-size:14px;}
+#viadeocontent #profileBar.js-fixed{top:30px; position:fixed;}
+

@@ -1,0 +1,115 @@
+#viadeocontent {
+  overflow: hidden;
+}
+
+.page-header {
+  margin-top:10px;
+}
+
+.box {
+  padding:0 10px 20px;
+}
+
+.field-icon,
+.field-name,
+.field-value {
+  float:left;
+  margin:0;
+}
+
+.field-icon {
+  width:8%;
+  text-align:right;
+}
+.field-name {
+  text-align:left;
+  padding:0 20px;
+  width:20%;
+  font-weight:bold;
+}
+.field-value {
+  text-align: left;
+  width:60%;
+}
+.field-value span {
+  display: block;
+  font-size: 11px;
+  color: #666;
+}
+.field-value a {
+  display: block;
+}
+
+#event-subscribe {
+  width:37%;
+  float:right;
+}
+
+#event-subscribe form {
+  padding:0 10px 20px 42px;
+  background: transparent url(/img/event-subscription.gif) no-repeat;
+}
+
+#event-subscribe fieldset {
+  padding:0 0 0 10px;
+  border-left:1px solid #ccc;
+}
+
+#event-subscribe legend {
+  padding:0 0 5px;
+  font-size: 14px;
+  color: #08679c;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+#eventDetail .event-organizer,
+#eventDetail .event-schedule,
+#eventDetail .event-category,
+#eventDetail .event-location {
+  padding:10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#eventDescription {
+  margin:0;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-sub-yes {
+  padding-left:30px;
+  background: transparent url(/img/yes.gif) no-repeat;
+}
+.event-sub-maybe {
+  padding-left:30px;
+  background: transparent url(/img/maybe.gif) no-repeat;
+}
+.event-sub-no {
+  padding-left:30px;
+  background: transparent url(/img/no.gif) no-repeat;
+}
+
+#eventCard {
+  background-image: url(/img/event-detail-bg02.png);
+}
+
+.eventDate {  
+  font-size:12px;
+}
+.eventDate span {
+  display: block;
+  text-align: center;
+  color: #004466;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.eventName {
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 22px;
+  color: #004466;
+}

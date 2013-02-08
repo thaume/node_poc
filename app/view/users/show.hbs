@@ -1,0 +1,107 @@
+<div id="viadeocontent">
+  <div class="page-header">
+    <h2>{{result.event.title}}</h2>
+    <div class="clear"></div>
+  </div>
+
+  <div class="main clearfix">
+    {{!-- Right column :: subscirbe to event }}
+    <div id="event-subscribe">
+      <form  xmlns:htmlutils="xalan://com.viaduc.util.HTMLUtils" action="/evenements/detailsevenement/" method="post">
+        <fieldset>
+          <legend>Souhaitez-vous participer ?</legend>
+          <p class="event-sub-yes">
+            <input type="radio" value="3" name="participationStatus" />
+            <label>Oui</label>
+          </p>
+          <p class="event-sub-maybe">
+            <input type="radio" value="4" name="participationStatus" />
+            <label>Peut-être</label>
+          </p>
+          <p class="event-sub-no">
+            <input type="radio" value="5" name="participationStatus" />
+            <label>Non</label>
+          </p>
+          <p>
+            <strong>Quantité de places :</strong>
+            <select name="nbGuests"><option value="0" selected="">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
+          </p>
+          <p class="participantDetails"><strong>Date limite d'inscription :</strong> samedi 16 février 2013, 1199 inscriptions restantes.</p>
+          <p>
+            <strong>Participants :</strong>
+            <ul>
+              <li><a href="#" alt="">1 inscrit</a> (sur 1200 max)</li>
+              <li><a href="#" alt="">1 personne confirmée</a></li>
+            </ul>
+          </p>
+        </fieldset>
+        <button type="submit" class="btn btn-primary " value="Valider" name="ValidateParticipationBtn">Valider</button>
+      </form>
+    </div>
+
+    {{!-- Main column :: detail of event }}
+    <div id="eventDetail">
+
+      {{!-- Event card :: calendar annoucement }}
+      <div id="eventCard">
+        <p class="eventDate"><span>{{result.event.details.startDay}}</span>de {{result.event.details.startHour}} à {{result.event.details.endHour}}</p>
+        <p class="eventName">{{result.event.title}}</p>
+      </div>
+
+      {{!-- Event description ::  }}
+      <p id="eventDescription">
+        {{result.event.details.description}}
+      </p>
+
+      {{!-- Event miscs :: informations }}
+      <div class="box event-organizer clearfix">
+        <p class="field-icon"><a alt="Pasmantier Isabelle" href="#"><img src="http://static9.viadeo-static.com/servlet/photo?memberId=00217qahmoj6mdkg&amp;height=35&amp;width=26&amp;ts=1357642448000" alt="" border="0" align=""></a></p>
+        <p class="field-name">Organisateur: </p>
+        <p class="field-value">
+          <a alt="Pasmantier Isabelle" href="#"><b>{{result.event.organiser.name}}</b></a>
+          {{result.event.organiser.currentPosition}}
+        </p>
+      </div>
+      <div class="box event-schedule clearfix">
+        <p class="field-icon"><img src="http://static1.viadeo-static.com/v_img20130125173739/icons/date.gif" alt=""></p>
+        <p class="field-name">Début :<br>Fin : </p>
+        <p class="field-value">
+          {{result.event.details.startDay}} {{result.event.details.startHour}}<br />
+          {{result.event.details.endDay}} {{result.event.details.endHour}}
+          <span>(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris</span>
+        </p>
+      </div>
+      <div class="box event-category clearfix">
+        <p class="field-icon"><img src="http://static3.viadeo-static.com/v_img20130125173739/icons/folder.gif" alt=""></p>
+        <p class="field-name">Catégorie :</p>
+        <p class="field-value">
+          <a href="/evenements/rechercheevenements/?categoryId=0021jg101g6vhn8t&amp;categoryLabel=Formation%2C+MBA%2C+MS+et+Masters&amp;menuCountry=fr">{{result.event.details.category}}</a>
+        </p>
+      </div>
+      <div class="box event-location clearfix">
+        <p class="field-icon"><img src="http://static3.viadeo-static.com/v_img20130125173739/icons/world.gif" alt=""></p>
+        <p class="field-name">Adresse :</p>
+        <p class="field-value">{{result.event.details.adress}}</p>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Left column :: user's info }}
+  <div id="tip">
+    <p class="tac">
+      <a class="main" href="/profile/00215n2j5hupzrk8"><img width="140" height="185" align="middle" style="vertical-align:middle;" alt="Pasmantier Isabelle | Co-Directrice QS France, QS FRANCE" src="http://static9.viadeo-static.com/servlet/photo?memberId=00217qahmoj6mdkg&amp;height=185&amp;width=140&amp;ts=1357642448000"></a>
+      <br>
+      <a href="/fr/profile/00215n2j5hupzrk8" class="miniprofileTarget"><b>{{result.event.organiser.name}}</b></a>
+      <br>
+      <span style="color:#ccc">{{result.event.organiser.currentPosition}}</span>
+    </p>
+  </div>
+
+</div>
+
+{{#partial "stylesheet"}}
+  <link rel="stylesheet" href="/css/-css-projects-evenements-detailsevenement.css">
+  <link rel="stylesheet" href="/css/-css-projects-stickyBar.css">
+  <link rel="stylesheet" href="/css/-css-global-expressions.css">
+  <link rel="stylesheet" href="/css/-css-project-evenement-form.css">
+{{/partial}}

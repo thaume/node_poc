@@ -1,0 +1,25 @@
+<div id="viadeocontent">
+  <div class="content">
+    
+    <ul class="users">
+      {{#each results}}
+      <li>
+        <p><a href="/api/users/show/{{id}}">hello {{name.first}} {{name.last}}, you are {{age}} years old !</a></p>
+      </li>
+      {{/each}}
+    </ul>
+    
+    <p>
+      <a href="/api/users/new">Add user</a>  
+    </p>
+
+  </div>
+</div>
+
+{{#partial "javascript"}}
+  <script>(function(){}(console.log('this script is view specific')));</script>
+{{/partial}}
+
+{{#partial "stylesheet"}}
+  <style type="text/css">#this-is-a-view-specific-class {}</style>
+{{/partial}}

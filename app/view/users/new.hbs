@@ -1,0 +1,72 @@
+<div id="viadeocontent">
+  <div class="content">
+
+    <form action="/api/users" method="post" id="new-user-form" class="core-form">
+      <fieldset>
+        <legend>Title</legend>
+        <p>
+          <label for="event-title">Title of your event</label>
+          <input type="text" placeholder="Enter the title here" name="event-title" id="event-title" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Organizer</legend>
+        <p>
+          <label for="event-organiser-name">Name</label>
+          <input type="text" placeholder="Enter the organizer's name here" name="event-organiser-name" id="event-organiser-name" />
+        </p>
+        <p>
+          <label for="event-organiser-position">Current position</label>
+          <input type="text" placeholder="Enter the organizer's position here" name="event-organiser-position" id="event-organiser-position" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Details</legend>
+        <p>
+          <label for="event-category">Category</label>
+          <input type="text" placeholder="Enter the category of the event" name="event-details-cat" id="event-details-cat" />
+        </p>
+         <p>
+          <label for="event-category">Description</label>
+          <textarea type="textarea" name="event-details-desc" id="event-details-desc"> </textarea>
+        </p>
+        <p>
+          <label for="event-adress">Adress</label>
+          <input type="text" placeholder="Enter the adress where the event will take place" name="event-details-adress" id="event-details-adress" />
+        </p>
+        <p>
+          <label for="event-day-start">Day start</label>
+          <input type="text" placeholder="The day when the event starts" name="event-day-start" id="event-day-start" />
+        </p>
+        <p>
+          <label for="event-hour-start">Hour start</label>
+          <input type="text" placeholder="The hour when the event starts" name="event-hour-start" id="event-hour-start" />
+        </p>
+        <p>
+          <label for="event-day-end">Day end</label>
+          <input type="text" placeholder="The day when the event stops" name="event-day-end" id="event-day-end" />
+        </p>
+        <p>
+          <label for="event-hour-end">Hour end</label>
+          <input type="text" placeholder="The hour when the event stops" name="event-hour-end" id="event-hour-end" />
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" name="submit" value="send" id="new-user-form-submit" />
+      </p>
+    </form>
+
+    <p><a href="/api/users/">Back</a></p>
+
+  </div>
+</div>
+
+{{#partial "javascript"}}
+{{/partial}}
+
+{{#partial "stylesheet"}}
+  <link rel="stylesheet" href="/css/-css-projects-evenements-detailsevenement.css">
+  <link rel="stylesheet" href="/css/-css-projects-stickyBar.css">
+  <link rel="stylesheet" href="/css/-css-global-expressions.css">
+  <link rel="stylesheet" href="/css/-css-project-evenement-form.css">
+{{/partial}}
